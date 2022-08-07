@@ -128,29 +128,29 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
-phonebook/phoneBookV2.obj: phonebook/phoneBookV2.c.obj
-.PHONY : phonebook/phoneBookV2.obj
+phoneBookV3.obj: phoneBookV3.c.obj
+.PHONY : phoneBookV3.obj
 
 # target to build an object file
-phonebook/phoneBookV2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phonebook/phoneBookV2.c.obj
-.PHONY : phonebook/phoneBookV2.c.obj
+phoneBookV3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBookV3.c.obj
+.PHONY : phoneBookV3.c.obj
 
-phonebook/phoneBookV2.i: phonebook/phoneBookV2.c.i
-.PHONY : phonebook/phoneBookV2.i
+phoneBookV3.i: phoneBookV3.c.i
+.PHONY : phoneBookV3.i
 
 # target to preprocess a source file
-phonebook/phoneBookV2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phonebook/phoneBookV2.c.i
-.PHONY : phonebook/phoneBookV2.c.i
+phoneBookV3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBookV3.c.i
+.PHONY : phoneBookV3.c.i
 
-phonebook/phoneBookV2.s: phonebook/phoneBookV2.c.s
-.PHONY : phonebook/phoneBookV2.s
+phoneBookV3.s: phoneBookV3.c.s
+.PHONY : phoneBookV3.s
 
 # target to generate assembly for a file
-phonebook/phoneBookV2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phonebook/phoneBookV2.c.s
-.PHONY : phonebook/phoneBookV2.c.s
+phoneBookV3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBookV3.c.s
+.PHONY : phoneBookV3.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... phonebook/phoneBookV2.obj
-	@echo ... phonebook/phoneBookV2.i
-	@echo ... phonebook/phoneBookV2.s
+	@echo ... phoneBookV3.obj
+	@echo ... phoneBookV3.i
+	@echo ... phoneBookV3.s
 .PHONY : help
 
 

@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/phonebook/phoneBookV2.c">
+		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/phoneBookV3.c">
 			<Option target="C"/>
 		</Unit>
 		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/CMakeLists.txt">
