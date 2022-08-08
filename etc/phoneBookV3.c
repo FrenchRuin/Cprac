@@ -13,19 +13,19 @@ int n = 0;
 
 char delim[] = " ";
 
-void init_directory();
-
-void process_command();
-
-int read_line(char str[], int limit);
-void load(char * fileName);
-void add(char *name, char *numbers);
-void delete(char *name);
-void save(char *fileName);
-int search(char *name);
-void find();
-void status();
-void reallocate();
+//void init_directory();
+//
+//void process_command();
+//
+//int read_line(char str[], int limit);
+//void load(char * fileName);
+//void add(char *name, char *numbers);
+//void delete(char *name);
+//void save(char *fileName);
+//int search(char *name);
+//void find();
+//void status();
+//void reallocate();
 
 
 int main() {

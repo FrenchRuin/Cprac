@@ -8,13 +8,13 @@ char *names[CAPACITY];
 char *numbers[CAPACITY];
 int n = 0;
 
-void add();
-void find();
-void status();
-void delete();
-void load();
-void save();
-int search(char *name);
+//void add();
+//void find();
+//void status();
+//void delete();
+//void load();
+//void save();
+//int search(char *name);
 
 int main() {
     char command[BUFFER_SIZE];

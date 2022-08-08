@@ -5,13 +5,13 @@
 #define CAPACITY 100
 #define BUFFER_SIZE 100
 
-void add();
-
-void find();
-
-void delete();
-
-void status();
+//void add();
+//
+//void find();
+//
+//void delete();
+//
+//void status();
 
 
 char *names[BUFFER_SIZE];
