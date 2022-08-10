@@ -24,6 +24,12 @@ void reallocate();
 void delete(char *name);
 void release_person(Person *p);
 int compose_name(char str[], int limit);
+void handle_add(char *name);
+int search(char *name);
+void find(char *name);
+void print_person(Person *p);
+void save(char *fileName);
+void status();
 
 
 int main(){
@@ -81,6 +87,9 @@ int main(){
             delete(name_str);
         } else if (strcmp(command, "exit") == 0) {
             break;
+        }else{
+            printf("Invalid Arguments...\n");
+            continue;
         }
     }
     return 0;
@@ -92,6 +101,60 @@ void init(){
     capacity = INIT_CAPACITY;
     n = 0;
 }
+
+
+
+int search(char *name)
+{
+    int i ;
+    for (i = 0; i < n; ++i) {
+        if (strcmp(name, directory[i]->name) == 0) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+void handle_add(char *name)
+{
+    char number[BUFFER_LENGTH], email[BUFFER_LENGTH], group[BUFFER_LENGTH];
+    char empty[] = " ";
+
+    printf("$ Phone : ");
+    read_line(stdin, number, BUFFER_LENGTH);
+
+    printf("$ Email : ");
+    read_line(stdin, email, BUFFER_LENGTH);
+
+    printf("$ Group : ");
+    read_line(stdin, group, BUFFER_LENGTH);
+
+    add(name, (char *) (strlen(number) > 0 ? number : empty),
+        (char *) (strlen(email) > 0 ? email : empty),
+        (char *) (strlen(group) > 0 ? group : empty));
+}
+
+void add(char *name,char *number, char *email, char*group)
+{
+    if (n > capacity)
+        reallocate();
+
+    int i = n-1;
+    while (i >= 0 && strcmp(directory[i]->name, name) > 0) {
+        directory[i + 1] = directory[i];
+        i--;
+    }
+
+    directory[i + 1] = (Person *)malloc(sizeof(Person));
+
+    directory[i + 1] ->name = name;
+    directory[i + 1] ->number = number;
+    directory[i + 1] ->email = email;
+    directory[i + 1] ->group = group;
+
+    n++;
+}                  // add 수정 필요... //
+
 
 
 void load(char *fileName){
@@ -132,47 +195,26 @@ void load(char *fileName){
 
 int read_line(FILE *fp,char str[],int n){
     int ch,i = 0;
-
     while ((ch = fgetc(fp)) != '\n' && ch != EOF) {
         if (i < n) {
-            str[i++] = ch;
+            str[i++] = (char)ch;
         }
     }
     str[i] = '\0';
     return i;
 }
 
-void add(char *name,char *number, char *email, char*group)
-{
-    if (n > capacity)
-        reallocate();
-
-    int i = n-1;
-    while (i >= 0 && strcmp(directory[i]->name, name) > 0) {
-        directory[i + 1] = directory[i];
-        i--;
-    }
-
-    directory[i + 1] = (Person *)malloc(sizeof(Person));
-
-    directory[i + 1] ->name = name;
-    directory[i + 1] ->number = number;
-    directory[i + 1] ->email = email;
-    directory[i + 1] ->group = group;
-
-    n++;
-}
 
 void reallocate()
 {
     capacity *= 2;
 
-    Person *tmp = (Person **) malloc(capacity * sizeof(Person *));
+    Person *tmp = (Person *) malloc(capacity * sizeof(Person *));
     for (int i = 0; i < n; ++i)
         tmp[i] = *directory[i];
 
     free(directory);
-    directory = tmp;
+    *directory = tmp;
 }
 
 void delete(char *name)
@@ -193,10 +235,14 @@ void delete(char *name)
 }
 
 void release_person(Person *p) {
-    free(p->name);
-    if(p->number != NULL) free(p->number);
-    if(p->email != NULL) free(p->email);
-    if(p->group != NULL) free(p->group);
+//    free(p->name);
+//    if(p->number != NULL)
+//        free(p->number);
+//    if(p->email != NULL)
+//        free(p->email);
+//    if(p->group != NULL)
+//        free(p->group);
+
     free(p);
 }
 
@@ -210,15 +256,56 @@ int compose_name(char str[], int limit) {
     }
 
     strcpy(str, ptr);
-    length += strlen(ptr);
+    length += (int)strlen(ptr);
 
     while ((ptr = strtok(NULL, " ")) != NULL) {
         if (length + strlen(ptr) + 1 < limit) {
             str[length++] = ' ';
             str[length] = '\0';
             strcat(str, ptr);
-            length += strlen(ptr);
+            length += (int)strlen(ptr);
         }
     }
     return length;
+}
+void find(char *name){
+    int index = search(name);
+    if (index == -1) {
+        printf("No person named '%s' exists.\n", name);
+    } else{
+        print_person(directory[index]);
+    }
+}
+
+void print_person(Person *p){
+
+    printf("%s\n", (*p).name);
+    printf("   Phone : %s\n", (*p).number);
+    printf("   Email : %s\n", (*p).email);
+    printf("   Group : %s\n", (*p).group);
+
+}
+
+void save(char *fileName){
+    int i ;
+    FILE *fp = fopen(fileName, "w");
+    if (fp == NULL) {
+        printf("Open Failed.\n");
+        return;
+    }
+    for (i = 0; i < n; ++i) {
+        fprintf(fp, "#%s#", directory[i]->name);
+        fprintf(fp, "#%s#", directory[i]->number);
+        fprintf(fp, "#%s#", directory[i]->email);
+        fprintf(fp, "#%s#\n", directory[i]->group);
+    }
+}
+
+void status()
+{
+    int i ;
+    for (i = 0; i < n; i++) {
+        print_person(directory[i]);
+    }
+    printf("Total %d persons\n", n);
 }
