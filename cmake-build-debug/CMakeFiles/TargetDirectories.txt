@@ -1,3 +1,3 @@
-C:/Users/XENSF101/Desktop/Cprac/cmake-build-debug/CMakeFiles/C.dir
-C:/Users/XENSF101/Desktop/Cprac/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/XENSF101/Desktop/Cprac/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/toxic/Desktop/code/Cprac/cmake-build-debug/CMakeFiles/C.dir
+C:/Users/toxic/Desktop/code/Cprac/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/toxic/Desktop/code/Cprac/cmake-build-debug/CMakeFiles/rebuild_cache.dir
