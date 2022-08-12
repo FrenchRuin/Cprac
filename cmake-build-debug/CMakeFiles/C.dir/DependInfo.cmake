@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/toxic/Desktop/code/Cprac/LinkedList1.c" "CMakeFiles/C.dir/LinkedList1.c.obj" "gcc" "CMakeFiles/C.dir/LinkedList1.c.obj.d"
+  "C:/Users/XENSF101/Desktop/Cprac/LinkedList2.c" "CMakeFiles/C.dir/LinkedList2.c.obj" "gcc" "CMakeFiles/C.dir/LinkedList2.c.obj.d"
   )
 
 # Targets to which this target links.
