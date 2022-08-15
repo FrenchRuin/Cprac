@@ -3,4 +3,5 @@ project(C C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(C Polynomial.c)
+#add_executable(C Polynomial.c)
+add_executable(C phoneBooks/phoneBookV4.c)

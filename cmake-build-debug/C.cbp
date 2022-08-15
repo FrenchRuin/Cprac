@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/toxic/CLionProjects/Cprac/Polynomial.c">
+		<Unit filename="C:/Users/toxic/CLionProjects/Cprac/phoneBooks/phoneBookV4.c">
 			<Option target="C"/>
 		</Unit>
 		<Unit filename="C:/Users/toxic/CLionProjects/Cprac/CMakeLists.txt">

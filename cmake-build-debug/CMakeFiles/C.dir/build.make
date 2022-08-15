@@ -68,28 +68,28 @@ include CMakeFiles/C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C.dir/flags.make
 
-CMakeFiles/C.dir/Polynomial.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/Polynomial.c.obj: ../Polynomial.c
-CMakeFiles/C.dir/Polynomial.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\CLionProjects\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/Polynomial.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/Polynomial.c.obj -MF CMakeFiles\C.dir\Polynomial.c.obj.d -o CMakeFiles\C.dir\Polynomial.c.obj -c C:\Users\toxic\CLionProjects\Cprac\Polynomial.c
+CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj: ../phoneBooks/phoneBookV4.c
+CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\CLionProjects\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj -MF CMakeFiles\C.dir\phoneBooks\phoneBookV4.c.obj.d -o CMakeFiles\C.dir\phoneBooks\phoneBookV4.c.obj -c C:\Users\toxic\CLionProjects\Cprac\phoneBooks\phoneBookV4.c
 
-CMakeFiles/C.dir/Polynomial.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/Polynomial.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\CLionProjects\Cprac\Polynomial.c > CMakeFiles\C.dir\Polynomial.c.i
+CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\CLionProjects\Cprac\phoneBooks\phoneBookV4.c > CMakeFiles\C.dir\phoneBooks\phoneBookV4.c.i
 
-CMakeFiles/C.dir/Polynomial.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/Polynomial.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\CLionProjects\Cprac\Polynomial.c -o CMakeFiles\C.dir\Polynomial.c.s
+CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\CLionProjects\Cprac\phoneBooks\phoneBookV4.c -o CMakeFiles\C.dir\phoneBooks\phoneBookV4.c.s
 
 # Object files for target C
 C_OBJECTS = \
-"CMakeFiles/C.dir/Polynomial.c.obj"
+"CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj"
 
 # External object files for target C
 C_EXTERNAL_OBJECTS =
 
-C.exe: CMakeFiles/C.dir/Polynomial.c.obj
+C.exe: CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj
 C.exe: CMakeFiles/C.dir/build.make
 C.exe: CMakeFiles/C.dir/linklibs.rsp
 C.exe: CMakeFiles/C.dir/objects1.rsp

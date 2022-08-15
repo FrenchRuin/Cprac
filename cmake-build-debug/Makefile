@@ -128,29 +128,29 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
-Polynomial.obj: Polynomial.c.obj
-.PHONY : Polynomial.obj
+phoneBooks/phoneBookV4.obj: phoneBooks/phoneBookV4.c.obj
+.PHONY : phoneBooks/phoneBookV4.obj
 
 # target to build an object file
-Polynomial.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/Polynomial.c.obj
-.PHONY : Polynomial.c.obj
+phoneBooks/phoneBookV4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj
+.PHONY : phoneBooks/phoneBookV4.c.obj
 
-Polynomial.i: Polynomial.c.i
-.PHONY : Polynomial.i
+phoneBooks/phoneBookV4.i: phoneBooks/phoneBookV4.c.i
+.PHONY : phoneBooks/phoneBookV4.i
 
 # target to preprocess a source file
-Polynomial.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/Polynomial.c.i
-.PHONY : Polynomial.c.i
+phoneBooks/phoneBookV4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.i
+.PHONY : phoneBooks/phoneBookV4.c.i
 
-Polynomial.s: Polynomial.c.s
-.PHONY : Polynomial.s
+phoneBooks/phoneBookV4.s: phoneBooks/phoneBookV4.c.s
+.PHONY : phoneBooks/phoneBookV4.s
 
 # target to generate assembly for a file
-Polynomial.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/Polynomial.c.s
-.PHONY : Polynomial.c.s
+phoneBooks/phoneBookV4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.s
+.PHONY : phoneBooks/phoneBookV4.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... Polynomial.obj
-	@echo ... Polynomial.i
-	@echo ... Polynomial.s
+	@echo ... phoneBooks/phoneBookV4.obj
+	@echo ... phoneBooks/phoneBookV4.i
+	@echo ... phoneBooks/phoneBookV4.s
 .PHONY : help
 
 

@@ -15,8 +15,9 @@ typedef struct person {   // 이름 번호 이메일 그룹 struct
 
 Person directory[CAPACITY];     // directory person 배열
 
+
 int read_line(FILE *fp, char str[], int n);            // 명령어 읽기
-void load(char *fileName);       // 파일 로드
+void load();       // 파일 로드
 void add(char *name, char *number, char *email, char *group);   // 이름 번호 이메일 그룹 추가
 void save(char *fileName);        // 파일 저장
 void print_person(Person p);      // 출력
@@ -34,7 +35,7 @@ int main() {
     char name_str[BUFFER_LENGTH];
 
     while (1) {
-        printf("$ ");
+        printf("$  ");
         if (read_line(stdin, command_line, BUFFER_LENGTH) <= 0) {
             continue;
         }
@@ -46,7 +47,7 @@ int main() {
                 printf("Invalid arguments.\n");
                 continue;
             }
-            load(arg);
+            load();
 
         } else if (strcmp(command, "add") == 0) {
             if (compose_name(name_str, BUFFER_LENGTH) <= 0) {
@@ -88,11 +89,11 @@ int main() {
 }
 
 
-void load(char *fileName) {
+void load() {
     char buffer[BUFFER_LENGTH];
     char *name, *number, *email, *group;
 
-    FILE *fp = fopen(fileName, "r");
+    FILE *fp = fopen("test.txt", "r");
     if (fp == NULL) {
         printf("Open Failed.\n");
         return;
