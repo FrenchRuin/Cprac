@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "C.exe"
   "C.exe.manifest"
   "C.pdb"
-  "CMakeFiles/C.dir/LinkedList2.c.obj"
-  "CMakeFiles/C.dir/LinkedList2.c.obj.d"
+  "CMakeFiles/C.dir/Polynomial.c.obj"
+  "CMakeFiles/C.dir/Polynomial.c.obj.d"
   "libC.dll.a"
 )
 
