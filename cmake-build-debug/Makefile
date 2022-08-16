@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\toxic\CLionProjects\Cprac
+CMAKE_SOURCE_DIR = C:\Users\XENSF101\Desktop\Cprac
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\toxic\CLionProjects\Cprac\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\toxic\CLionProjects\Cprac\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\CLionProjects\Cprac\cmake-build-debug\CMakeFiles C:\Users\toxic\CLionProjects\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug\CMakeFiles C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\CLionProjects\Cprac\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,29 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
-phoneBooks/phoneBookV4.obj: phoneBooks/phoneBookV4.c.obj
-.PHONY : phoneBooks/phoneBookV4.obj
+DoublyLinkedList.obj: DoublyLinkedList.c.obj
+.PHONY : DoublyLinkedList.obj
 
 # target to build an object file
-phoneBooks/phoneBookV4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj
-.PHONY : phoneBooks/phoneBookV4.c.obj
+DoublyLinkedList.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/DoublyLinkedList.c.obj
+.PHONY : DoublyLinkedList.c.obj
 
-phoneBooks/phoneBookV4.i: phoneBooks/phoneBookV4.c.i
-.PHONY : phoneBooks/phoneBookV4.i
+DoublyLinkedList.i: DoublyLinkedList.c.i
+.PHONY : DoublyLinkedList.i
 
 # target to preprocess a source file
-phoneBooks/phoneBookV4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.i
-.PHONY : phoneBooks/phoneBookV4.c.i
+DoublyLinkedList.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/DoublyLinkedList.c.i
+.PHONY : DoublyLinkedList.c.i
 
-phoneBooks/phoneBookV4.s: phoneBooks/phoneBookV4.c.s
-.PHONY : phoneBooks/phoneBookV4.s
+DoublyLinkedList.s: DoublyLinkedList.c.s
+.PHONY : DoublyLinkedList.s
 
 # target to generate assembly for a file
-phoneBooks/phoneBookV4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.s
-.PHONY : phoneBooks/phoneBookV4.c.s
+DoublyLinkedList.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/DoublyLinkedList.c.s
+.PHONY : DoublyLinkedList.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... phoneBooks/phoneBookV4.obj
-	@echo ... phoneBooks/phoneBookV4.i
-	@echo ... phoneBooks/phoneBookV4.s
+	@echo ... DoublyLinkedList.obj
+	@echo ... DoublyLinkedList.i
+	@echo ... DoublyLinkedList.s
 .PHONY : help
 
 

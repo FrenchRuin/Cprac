@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "C.exe"
   "C.exe.manifest"
   "C.pdb"
-  "CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj"
-  "CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj.d"
+  "CMakeFiles/C.dir/DoublyLinkedList.c.obj"
+  "CMakeFiles/C.dir/DoublyLinkedList.c.obj.d"
   "libC.dll.a"
 )
 

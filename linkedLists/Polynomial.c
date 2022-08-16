@@ -38,6 +38,8 @@ Polynomial *create_by_add_two_polynomials(char name,char f, char g);
 Term *parse_term(char *expr, int begin, int end, Polynomial *p_poly);
 void insert_polynomial(Polynomial *ptr_poly);
 void destroy_polynomial(Polynomial *ptr_poly);
+void erase_blanks(char *expression);
+int read_line(char str[],int n);
 /*******************************************/
 
 int main()
@@ -101,25 +103,7 @@ void add_term(int c, int e, Polynomial *poly) // c = 계수 , e = 차수(지수)
     poly->size ++;                  // 항 증가
 }
 
-int eval_poly(Polynomial *poly, int x)
-{
-    int result = 0;
-    Term *t = poly->first;
-    while (t != NULL) {
-        result += eval_term(t, x); // 각각의 항의 값을 계산해서 더한다.
-        t = t->next;
-    }
-    return result;
-}
 
-int eval_term(Term *term,int x)
-{
-    int result = term->coef; // 계수
-    for (int i = 0; i < term->expo; i++) {
-        result *=x;
-    }
-    return result;    //
-}
 
 void print_poly(Polynomial *p)
 {
@@ -144,7 +128,7 @@ void process_command()
 
     while (1) {
         printf("$ ");
-        if (read_line(stdin, command_line, BUFFER_LENGTH) <= 0) {
+        if (read_line(command_line, BUFFER_LENGTH) <= 0) {
             continue;
         }
         strcpy(copied, command_line); // 입력 라인을 복사한다. 꼭 필요한것은 아니다.
@@ -176,11 +160,43 @@ void process_command()
     }
 }
 
+int read_line(char str[],int n){
+    int ch,i = 0;
+    while ((ch = getchar()) != '\n') {
+        if (i < n) {
+            str[i++] = (char)ch;
+        }
+    }
+    str[i] = '\0';
+    return i;
+}
+
 void handle_calc(char name, char *x_str)
 {
     //직접 코딩해야함..
+
+
 }
 
+int eval_poly(Polynomial *poly, int x)
+{
+    int result = 0;
+    Term *t = poly->first;
+    while (t != NULL) {
+        result += eval_term(t, x); // 각각의 항의 값을 계산해서 더한다.
+        t = t->next;
+    }
+    return result;
+}
+
+int eval_term(Term *term,int x)
+{
+    int result = term->coef; // 계수
+    for (int i = 0; i < term->expo; i++) {
+        result *=x;
+    }
+    return result;    //
+}
 void handle_definition(char *expression)
 {
     erase_blanks(expression);  // 모든 공백 문자열을 제거한다.
@@ -229,6 +245,23 @@ void handle_definition(char *expression)
 void erase_blanks(char *expression)
 {
     // 직접 코딩해야함...  (주의) -- 맨 마지막은  /0 로 마무리 해야함
+    char *temp[BUFFER_LENGTH];
+    int index = 0;
+    for (int i = 0; expression[i] != '\0'; i++) {
+        if (expression[i] == ' ') {
+            temp[i] = expression[i];
+        }
+        index ++;
+    }
+    temp[index] = '\0';
+
+    index = 0;
+    for (int j = 0; temp[j] != '\0'; j++) {
+        expression[j] = temp[j];
+        index ++;
+    }
+
+    expression[index] = '\0';
 }
 
 
@@ -334,3 +367,4 @@ Polynomial *create_by_add_two_polynomials(char name, char f, char g)
 {
     //내가 직접 코딩.. (새로운 empty 다항식을 만든후, 두 다항식의 모든 항들을 add 해주면 된다.)
 }
+

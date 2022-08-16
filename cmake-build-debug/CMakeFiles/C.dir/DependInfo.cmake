@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/toxic/CLionProjects/Cprac/phoneBooks/phoneBookV4.c" "CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj" "gcc" "CMakeFiles/C.dir/phoneBooks/phoneBookV4.c.obj.d"
+  "C:/Users/XENSF101/Desktop/Cprac/DoublyLinkedList.c" "CMakeFiles/C.dir/DoublyLinkedList.c.obj" "gcc" "CMakeFiles/C.dir/DoublyLinkedList.c.obj.d"
   )
 
 # Targets to which this target links.
