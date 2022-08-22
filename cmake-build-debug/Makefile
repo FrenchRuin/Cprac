@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\XENSF101\Desktop\Cprac
+CMAKE_SOURCE_DIR = C:\Users\toxic\Desktop\code\Cprac
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug\CMakeFiles C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\Cprac\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,53 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
-DoublyLinkedList.obj: DoublyLinkedList.c.obj
-.PHONY : DoublyLinkedList.obj
+stacks/paren_checker.obj: stacks/paren_checker.c.obj
+.PHONY : stacks/paren_checker.obj
 
 # target to build an object file
-DoublyLinkedList.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/DoublyLinkedList.c.obj
-.PHONY : DoublyLinkedList.c.obj
+stacks/paren_checker.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/paren_checker.c.obj
+.PHONY : stacks/paren_checker.c.obj
 
-DoublyLinkedList.i: DoublyLinkedList.c.i
-.PHONY : DoublyLinkedList.i
+stacks/paren_checker.i: stacks/paren_checker.c.i
+.PHONY : stacks/paren_checker.i
 
 # target to preprocess a source file
-DoublyLinkedList.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/DoublyLinkedList.c.i
-.PHONY : DoublyLinkedList.c.i
+stacks/paren_checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/paren_checker.c.i
+.PHONY : stacks/paren_checker.c.i
 
-DoublyLinkedList.s: DoublyLinkedList.c.s
-.PHONY : DoublyLinkedList.s
+stacks/paren_checker.s: stacks/paren_checker.c.s
+.PHONY : stacks/paren_checker.s
 
 # target to generate assembly for a file
-DoublyLinkedList.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/DoublyLinkedList.c.s
-.PHONY : DoublyLinkedList.c.s
+stacks/paren_checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/paren_checker.c.s
+.PHONY : stacks/paren_checker.c.s
+
+stacks/stackArray.obj: stacks/stackArray.c.obj
+.PHONY : stacks/stackArray.obj
+
+# target to build an object file
+stacks/stackArray.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackArray.c.obj
+.PHONY : stacks/stackArray.c.obj
+
+stacks/stackArray.i: stacks/stackArray.c.i
+.PHONY : stacks/stackArray.i
+
+# target to preprocess a source file
+stacks/stackArray.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackArray.c.i
+.PHONY : stacks/stackArray.c.i
+
+stacks/stackArray.s: stacks/stackArray.c.s
+.PHONY : stacks/stackArray.s
+
+# target to generate assembly for a file
+stacks/stackArray.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackArray.c.s
+.PHONY : stacks/stackArray.c.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... DoublyLinkedList.obj
-	@echo ... DoublyLinkedList.i
-	@echo ... DoublyLinkedList.s
+	@echo ... stacks/paren_checker.obj
+	@echo ... stacks/paren_checker.i
+	@echo ... stacks/paren_checker.s
+	@echo ... stacks/stackArray.obj
+	@echo ... stacks/stackArray.i
+	@echo ... stacks/stackArray.s
 .PHONY : help
 
 

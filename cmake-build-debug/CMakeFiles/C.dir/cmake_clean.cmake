@@ -2,8 +2,10 @@ file(REMOVE_RECURSE
   "C.exe"
   "C.exe.manifest"
   "C.pdb"
-  "CMakeFiles/C.dir/DoublyLinkedList.c.obj"
-  "CMakeFiles/C.dir/DoublyLinkedList.c.obj.d"
+  "CMakeFiles/C.dir/stacks/paren_checker.c.obj"
+  "CMakeFiles/C.dir/stacks/paren_checker.c.obj.d"
+  "CMakeFiles/C.dir/stacks/stackArray.c.obj"
+  "CMakeFiles/C.dir/stacks/stackArray.c.obj.d"
   "libC.dll.a"
 )
 
