@@ -17,32 +17,37 @@ static void terminate(const char *message){
     exit(1);
 }
 
-void push(Stack s, Item i)
+void reallocate(Stack s);
+
+void push(Stack s,Item i)
 {
     if (is_full(s)) {
         reallocate(s);
     }
     s->top++;
-    s->contents[s->top] = i;
+    s->contents[s->top + 1] = i;
+}
+bool is_full(Stack s)
+{
+    return s->top < s->size;
 }
 
 Item pop(Stack s)
 {
     if (is_empty(s)) {
-        terminate("Error in Pop : stack is empty");
+        terminate("Error in pop : stack is empty");
     }
     s->top--;
     return s->contents[s->top + 1];
 }
 
-Item peek(Stack s, Item i)
+Item peek(Stack s)
 {
-    if (is_empty(s,i)) {
+    if (is_empty(s)) {
         terminate("Error in peek : stack is empty");
     }
     return s->contents[s->top];
 }
-
 
 Stack create()
 {
@@ -71,16 +76,16 @@ void make_empty(Stack s)
     s->top = -1;
 }
 
-bool is_empty(Stack s,Item i)
+bool is_empty(Stack s)
 {
-    return s->top = NULL;
+    return s->top == -1;
 }
 
 void reallocate(Stack s)
 {
     Item *tmp = (Item *) malloc(2 * s->size * sizeof(Item));
     if (tmp == NULL) {
-        terminate("Error in create : stack could not be created.");
+        terminate("Error in create : Stack could not be created.");
     }
     for (int i = 0; i < s->size; i++) {
         tmp[i] = s->contents[i];

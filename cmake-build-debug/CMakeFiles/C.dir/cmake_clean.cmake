@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/C.dir/stacks/paren_checker.c.obj.d"
   "CMakeFiles/C.dir/stacks/stackADT.c.obj"
   "CMakeFiles/C.dir/stacks/stackADT.c.obj.d"
+  "CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj"
+  "CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj.d"
   "CMakeFiles/C.dir/stacks/stackArray.c.obj"
   "CMakeFiles/C.dir/stacks/stackArray.c.obj.d"
   "libC.dll.a"
