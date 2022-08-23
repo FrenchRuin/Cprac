@@ -4,4 +4,4 @@ project(C C)
 set(CMAKE_C_STANDARD 99)
 
 #add_executable(C linkedLists/Polynomial.c)
-add_executable(C stacks/paren_checker.c stacks/stackArray.c stacks/stackADT.h stacks/stackADT.c stacks/stackADT_linkedList.c)
+add_executable(C stacks/paren_checker.c stacks/stackArray.c stacks/stackADT.h stacks/stackADT.c stacks/stackADT_linkedList.c postfix/postfix.c)

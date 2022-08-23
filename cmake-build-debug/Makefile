@@ -128,6 +128,30 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
+postfix/postfix.obj: postfix/postfix.c.obj
+.PHONY : postfix/postfix.obj
+
+# target to build an object file
+postfix/postfix.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.obj
+.PHONY : postfix/postfix.c.obj
+
+postfix/postfix.i: postfix/postfix.c.i
+.PHONY : postfix/postfix.i
+
+# target to preprocess a source file
+postfix/postfix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.i
+.PHONY : postfix/postfix.c.i
+
+postfix/postfix.s: postfix/postfix.c.s
+.PHONY : postfix/postfix.s
+
+# target to generate assembly for a file
+postfix/postfix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.s
+.PHONY : postfix/postfix.c.s
+
 stacks/paren_checker.obj: stacks/paren_checker.c.obj
 .PHONY : stacks/paren_checker.obj
 
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
+	@echo ... postfix/postfix.obj
+	@echo ... postfix/postfix.i
+	@echo ... postfix/postfix.s
 	@echo ... stacks/paren_checker.obj
 	@echo ... stacks/paren_checker.i
 	@echo ... stacks/paren_checker.s

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/XENSF101/Desktop/C/Cprac/postfix/postfix.c" "CMakeFiles/C.dir/postfix/postfix.c.obj" "gcc" "CMakeFiles/C.dir/postfix/postfix.c.obj.d"
   "C:/Users/XENSF101/Desktop/C/Cprac/stacks/paren_checker.c" "CMakeFiles/C.dir/stacks/paren_checker.c.obj" "gcc" "CMakeFiles/C.dir/stacks/paren_checker.c.obj.d"
   "C:/Users/XENSF101/Desktop/C/Cprac/stacks/stackADT.c" "CMakeFiles/C.dir/stacks/stackADT.c.obj" "gcc" "CMakeFiles/C.dir/stacks/stackADT.c.obj.d"
   "C:/Users/XENSF101/Desktop/C/Cprac/stacks/stackADT_linkedList.c" "CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj" "gcc" "CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj.d"
