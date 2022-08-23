@@ -29,6 +29,7 @@ void add_term(int c, int e, Polynomial *poly);
 void process_command();
 int eval_poly(Polynomial *poly, int x);   // 다항식의 값을 계산하는 함수
 int eval_term(Term *term,int x);  // 하나의 항의 값을 계산하는 함수
+int parse_and_add_term(body, begin_term, i, ptr_poly);
 void print_poly(Polynomial *p);
 void print_term(Term *pTerm);
 void handle_calc(char name, char *x_str);
@@ -366,5 +367,6 @@ void destroy_polynomial(Polynomial *ptr_poly)
 Polynomial *create_by_add_two_polynomials(char name, char f, char g)
 {
     //내가 직접 코딩.. (새로운 empty 다항식을 만든후, 두 다항식의 모든 항들을 add 해주면 된다.)
+
 }
 

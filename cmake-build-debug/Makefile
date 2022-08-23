@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\toxic\Desktop\code\Cprac
+CMAKE_SOURCE_DIR = C:\Users\XENSF101\Desktop\C\Cprac
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ stacks/paren_checker.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/paren_checker.c.s
 .PHONY : stacks/paren_checker.c.s
 
+stacks/stackADT.obj: stacks/stackADT.c.obj
+.PHONY : stacks/stackADT.obj
+
+# target to build an object file
+stacks/stackADT.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT.c.obj
+.PHONY : stacks/stackADT.c.obj
+
+stacks/stackADT.i: stacks/stackADT.c.i
+.PHONY : stacks/stackADT.i
+
+# target to preprocess a source file
+stacks/stackADT.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT.c.i
+.PHONY : stacks/stackADT.c.i
+
+stacks/stackADT.s: stacks/stackADT.c.s
+.PHONY : stacks/stackADT.s
+
+# target to generate assembly for a file
+stacks/stackADT.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT.c.s
+.PHONY : stacks/stackADT.c.s
+
 stacks/stackArray.obj: stacks/stackArray.c.obj
 .PHONY : stacks/stackArray.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... stacks/paren_checker.obj
 	@echo ... stacks/paren_checker.i
 	@echo ... stacks/paren_checker.s
+	@echo ... stacks/stackADT.obj
+	@echo ... stacks/stackADT.i
+	@echo ... stacks/stackADT.s
 	@echo ... stacks/stackArray.obj
 	@echo ... stacks/stackArray.i
 	@echo ... stacks/stackArray.s

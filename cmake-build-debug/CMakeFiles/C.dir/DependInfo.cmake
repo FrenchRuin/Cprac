@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/toxic/Desktop/code/Cprac/stacks/paren_checker.c" "CMakeFiles/C.dir/stacks/paren_checker.c.obj" "gcc" "CMakeFiles/C.dir/stacks/paren_checker.c.obj.d"
-  "C:/Users/toxic/Desktop/code/Cprac/stacks/stackArray.c" "CMakeFiles/C.dir/stacks/stackArray.c.obj" "gcc" "CMakeFiles/C.dir/stacks/stackArray.c.obj.d"
+  "C:/Users/XENSF101/Desktop/C/Cprac/stacks/paren_checker.c" "CMakeFiles/C.dir/stacks/paren_checker.c.obj" "gcc" "CMakeFiles/C.dir/stacks/paren_checker.c.obj.d"
+  "C:/Users/XENSF101/Desktop/C/Cprac/stacks/stackADT.c" "CMakeFiles/C.dir/stacks/stackADT.c.obj" "gcc" "CMakeFiles/C.dir/stacks/stackADT.c.obj.d"
+  "C:/Users/XENSF101/Desktop/C/Cprac/stacks/stackArray.c" "CMakeFiles/C.dir/stacks/stackArray.c.obj" "gcc" "CMakeFiles/C.dir/stacks/stackArray.c.obj.d"
   )
 
 # Targets to which this target links.
