@@ -128,77 +128,29 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
-postfix/postfix.obj: postfix/postfix.c.obj
-.PHONY : postfix/postfix.obj
+mazePrac/mazePrac.obj: mazePrac/mazePrac.c.obj
+.PHONY : mazePrac/mazePrac.obj
 
 # target to build an object file
-postfix/postfix.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.obj
-.PHONY : postfix/postfix.c.obj
+mazePrac/mazePrac.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/mazePrac/mazePrac.c.obj
+.PHONY : mazePrac/mazePrac.c.obj
 
-postfix/postfix.i: postfix/postfix.c.i
-.PHONY : postfix/postfix.i
-
-# target to preprocess a source file
-postfix/postfix.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.i
-.PHONY : postfix/postfix.c.i
-
-postfix/postfix.s: postfix/postfix.c.s
-.PHONY : postfix/postfix.s
-
-# target to generate assembly for a file
-postfix/postfix.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.s
-.PHONY : postfix/postfix.c.s
-
-postfix/postfix_bracket.obj: postfix/postfix_bracket.c.obj
-.PHONY : postfix/postfix_bracket.obj
-
-# target to build an object file
-postfix/postfix_bracket.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_bracket.c.obj
-.PHONY : postfix/postfix_bracket.c.obj
-
-postfix/postfix_bracket.i: postfix/postfix_bracket.c.i
-.PHONY : postfix/postfix_bracket.i
+mazePrac/mazePrac.i: mazePrac/mazePrac.c.i
+.PHONY : mazePrac/mazePrac.i
 
 # target to preprocess a source file
-postfix/postfix_bracket.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_bracket.c.i
-.PHONY : postfix/postfix_bracket.c.i
+mazePrac/mazePrac.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/mazePrac/mazePrac.c.i
+.PHONY : mazePrac/mazePrac.c.i
 
-postfix/postfix_bracket.s: postfix/postfix_bracket.c.s
-.PHONY : postfix/postfix_bracket.s
-
-# target to generate assembly for a file
-postfix/postfix_bracket.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_bracket.c.s
-.PHONY : postfix/postfix_bracket.c.s
-
-postfix/postfix_non_bracket.obj: postfix/postfix_non_bracket.c.obj
-.PHONY : postfix/postfix_non_bracket.obj
-
-# target to build an object file
-postfix/postfix_non_bracket.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj
-.PHONY : postfix/postfix_non_bracket.c.obj
-
-postfix/postfix_non_bracket.i: postfix/postfix_non_bracket.c.i
-.PHONY : postfix/postfix_non_bracket.i
-
-# target to preprocess a source file
-postfix/postfix_non_bracket.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_non_bracket.c.i
-.PHONY : postfix/postfix_non_bracket.c.i
-
-postfix/postfix_non_bracket.s: postfix/postfix_non_bracket.c.s
-.PHONY : postfix/postfix_non_bracket.s
+mazePrac/mazePrac.s: mazePrac/mazePrac.c.s
+.PHONY : mazePrac/mazePrac.s
 
 # target to generate assembly for a file
-postfix/postfix_non_bracket.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_non_bracket.c.s
-.PHONY : postfix/postfix_non_bracket.c.s
+mazePrac/mazePrac.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/mazePrac/mazePrac.c.s
+.PHONY : mazePrac/mazePrac.c.s
 
 # Help Target
 help:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... postfix/postfix.obj
-	@echo ... postfix/postfix.i
-	@echo ... postfix/postfix.s
-	@echo ... postfix/postfix_bracket.obj
-	@echo ... postfix/postfix_bracket.i
-	@echo ... postfix/postfix_bracket.s
-	@echo ... postfix/postfix_non_bracket.obj
-	@echo ... postfix/postfix_non_bracket.i
-	@echo ... postfix/postfix_non_bracket.s
+	@echo ... mazePrac/mazePrac.obj
+	@echo ... mazePrac/mazePrac.i
+	@echo ... mazePrac/mazePrac.s
 .PHONY : help
 
 

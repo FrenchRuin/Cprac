@@ -68,65 +68,33 @@ include CMakeFiles/C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C.dir/flags.make
 
-CMakeFiles/C.dir/postfix/postfix.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/postfix/postfix.c.obj: ../postfix/postfix.c
-CMakeFiles/C.dir/postfix/postfix.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/postfix/postfix.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/postfix/postfix.c.obj -MF CMakeFiles\C.dir\postfix\postfix.c.obj.d -o CMakeFiles\C.dir\postfix\postfix.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix.c
+CMakeFiles/C.dir/mazePrac/mazePrac.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/mazePrac/mazePrac.c.obj: ../mazePrac/mazePrac.c
+CMakeFiles/C.dir/mazePrac/mazePrac.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/mazePrac/mazePrac.c.obj"
+	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/mazePrac/mazePrac.c.obj -MF CMakeFiles\C.dir\mazePrac\mazePrac.c.obj.d -o CMakeFiles\C.dir\mazePrac\mazePrac.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\mazePrac\mazePrac.c
 
-CMakeFiles/C.dir/postfix/postfix.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/postfix/postfix.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix.c > CMakeFiles\C.dir\postfix\postfix.c.i
+CMakeFiles/C.dir/mazePrac/mazePrac.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/mazePrac/mazePrac.c.i"
+	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\mazePrac\mazePrac.c > CMakeFiles\C.dir\mazePrac\mazePrac.c.i
 
-CMakeFiles/C.dir/postfix/postfix.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/postfix/postfix.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix.c -o CMakeFiles\C.dir\postfix\postfix.c.s
-
-CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj: ../postfix/postfix_non_bracket.c
-CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj -MF CMakeFiles\C.dir\postfix\postfix_non_bracket.c.obj.d -o CMakeFiles\C.dir\postfix\postfix_non_bracket.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_non_bracket.c
-
-CMakeFiles/C.dir/postfix/postfix_non_bracket.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/postfix/postfix_non_bracket.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_non_bracket.c > CMakeFiles\C.dir\postfix\postfix_non_bracket.c.i
-
-CMakeFiles/C.dir/postfix/postfix_non_bracket.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/postfix/postfix_non_bracket.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_non_bracket.c -o CMakeFiles\C.dir\postfix\postfix_non_bracket.c.s
-
-CMakeFiles/C.dir/postfix/postfix_bracket.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/postfix/postfix_bracket.c.obj: ../postfix/postfix_bracket.c
-CMakeFiles/C.dir/postfix/postfix_bracket.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/C.dir/postfix/postfix_bracket.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/postfix/postfix_bracket.c.obj -MF CMakeFiles\C.dir\postfix\postfix_bracket.c.obj.d -o CMakeFiles\C.dir\postfix\postfix_bracket.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_bracket.c
-
-CMakeFiles/C.dir/postfix/postfix_bracket.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/postfix/postfix_bracket.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_bracket.c > CMakeFiles\C.dir\postfix\postfix_bracket.c.i
-
-CMakeFiles/C.dir/postfix/postfix_bracket.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/postfix/postfix_bracket.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_bracket.c -o CMakeFiles\C.dir\postfix\postfix_bracket.c.s
+CMakeFiles/C.dir/mazePrac/mazePrac.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/mazePrac/mazePrac.c.s"
+	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\mazePrac\mazePrac.c -o CMakeFiles\C.dir\mazePrac\mazePrac.c.s
 
 # Object files for target C
 C_OBJECTS = \
-"CMakeFiles/C.dir/postfix/postfix.c.obj" \
-"CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj" \
-"CMakeFiles/C.dir/postfix/postfix_bracket.c.obj"
+"CMakeFiles/C.dir/mazePrac/mazePrac.c.obj"
 
 # External object files for target C
 C_EXTERNAL_OBJECTS =
 
-C.exe: CMakeFiles/C.dir/postfix/postfix.c.obj
-C.exe: CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj
-C.exe: CMakeFiles/C.dir/postfix/postfix_bracket.c.obj
+C.exe: CMakeFiles/C.dir/mazePrac/mazePrac.c.obj
 C.exe: CMakeFiles/C.dir/build.make
 C.exe: CMakeFiles/C.dir/linklibs.rsp
 C.exe: CMakeFiles/C.dir/objects1.rsp
 C.exe: CMakeFiles/C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable C.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable C.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

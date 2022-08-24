@@ -2,12 +2,8 @@ file(REMOVE_RECURSE
   "C.exe"
   "C.exe.manifest"
   "C.pdb"
-  "CMakeFiles/C.dir/postfix/postfix.c.obj"
-  "CMakeFiles/C.dir/postfix/postfix.c.obj.d"
-  "CMakeFiles/C.dir/postfix/postfix_bracket.c.obj"
-  "CMakeFiles/C.dir/postfix/postfix_bracket.c.obj.d"
-  "CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj"
-  "CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj.d"
+  "CMakeFiles/C.dir/mazePrac/mazePrac.c.obj"
+  "CMakeFiles/C.dir/mazePrac/mazePrac.c.obj.d"
   "libC.dll.a"
 )
 

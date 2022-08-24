@@ -8,9 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/XENSF101/Desktop/C/Cprac/postfix/postfix.c" "CMakeFiles/C.dir/postfix/postfix.c.obj" "gcc" "CMakeFiles/C.dir/postfix/postfix.c.obj.d"
-  "C:/Users/XENSF101/Desktop/C/Cprac/postfix/postfix_bracket.c" "CMakeFiles/C.dir/postfix/postfix_bracket.c.obj" "gcc" "CMakeFiles/C.dir/postfix/postfix_bracket.c.obj.d"
-  "C:/Users/XENSF101/Desktop/C/Cprac/postfix/postfix_non_bracket.c" "CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj" "gcc" "CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj.d"
+  "C:/Users/XENSF101/Desktop/C/Cprac/mazePrac/mazePrac.c" "CMakeFiles/C.dir/mazePrac/mazePrac.c.obj" "gcc" "CMakeFiles/C.dir/mazePrac/mazePrac.c.obj.d"
   )
 
 # Targets to which this target links.
