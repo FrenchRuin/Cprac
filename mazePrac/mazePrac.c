@@ -107,9 +107,9 @@ int main()
     for(int i=0; i<MAZE_SIZE; i++){
         for(int j=0; j<MAZE_SIZE; j++){
             if(maze[i][j]=='0'){
-                printf("¤±");
+                printf("??");
             }else if(maze[i][j]=='1'){
-                printf("¤³");
+                printf("??");
             }else {
                 printf("%c",maze[i][j]);
             }

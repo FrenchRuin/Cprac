@@ -7,7 +7,7 @@
 #include <stdbool.h>
 #include "pos.h"
 
-typedef Position Item; // Code Recycle possible.
+typedef Position pos; // Code Recycle possible.
 
 typedef struct stack_type *Stack;
 
@@ -15,9 +15,9 @@ Stack create();
 void destroy(Stack s);
 void make_empty(Stack s);
 bool is_empty(Stack s);
-Item pop(Stack s);
-Item peek(Stack s);
-void push(Stack s,Item i);
+pos pop(Stack s);
+pos peek(Stack s);
+void push(Stack s, pos i);
 bool is_full(Stack s);
 
 #endif //C_MAZESTACK_H

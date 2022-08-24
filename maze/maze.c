@@ -15,6 +15,8 @@
  */
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #include "pos.h"
 #include "mazeStack.h"
 
@@ -25,34 +27,32 @@
 #define VISITED 2               // 이미 방문한 위치
 #define BACKTRACKED 3           // 방문했다가 되돌아온 위치
 
-char maze[MAZE_SIZE][MAZE_SIZE]={
-        {'1','1','1','1','1','1','1','1','1','1'},
-        {'m','0','0','0','1','0','0','0','0','1'},
-        {'1','0','0','0','1','0','0','1','0','1'},
-        {'1','0','1','1','1','0','0','1','0','1'},
-        {'1','0','0','0','1','0','0','1','0','1'},
-        {'1','0','1','0','1','0','0','1','0','1'},
-        {'1','0','1','0','1','0','0','1','0','1'},
-        {'1','0','1','0','1','0','0','1','0','1'},
-        {'1','0','1','0','0','0','0','1','0','X'},
-        {'1','1','1','1','1','1','1','1','1','1'}};
+char maze[MAZE_SIZE][MAZE_SIZE] = {
+        {'1', '1', '1', '1', '1', '1', '1', '1', '1', '1'},
+        {'m', '0', '0', '0', '1', '0', '0', '0', '0', '1'},
+        {'1', '0', '0', '0', '1', '0', '0', '1', '0', '1'},
+        {'1', '0', '1', '1', '1', '0', '0', '1', '0', '1'},
+        {'1', '0', '0', '0', '1', '0', '0', '1', '0', '1'},
+        {'1', '0', '1', '0', '1', '0', '0', '1', '0', '1'},
+        {'1', '0', '1', '0', '1', '0', '0', '1', '0', '1'},
+        {'1', '0', '1', '0', '1', '0', '0', '1', '0', '1'},
+        {'1', '0', '1', '0', '0', '0', '0', '1', '0', 'X'},
+        {'1', '1', '1', '1', '1', '1', '1', '1', '1', '1'}};
 int n;
 
-void read_maze();
 
 void print_maze();
 
 bool movable(Position pos, int dir);
 
 int main() {
-    read_maze();            // maze.txt 파일로부터 미로의 모양을 maze로 입력
 
     Stack s = create();     // stack to save location
     Position cur;           // current location
     cur.x = 0;
     cur.y = 0;
 
-    while (0){
+    while (1) {
         maze[cur.x][cur.y] = VISITED;               // mark current location
         if (cur.x == n - 1 && cur.y == n - 1) {     // if current location is exit.
             printf("Found the Path.\n");
@@ -79,37 +79,24 @@ int main() {
     }
     print_maze();
 }
-void read_maze()
-{
-//    FILE *fp = fopen("maze.txt", "r+");
-//    for (int i = 0; i < MAZE_SIZE; i++) {
-//        for (int j = 0; j < MAZE_SIZE; j++) {
-//            fscanf(fp, "%d", &maze[i][j]);
-//            printf("%d\n", maze[i][j]);
-//        }
-//    }
-//    fclose(fp);
-}
 
 
-void print_maze()
-{
-    printf("미로 \n");
-    for(int i=0; i<MAZE_SIZE; i++){
-        for(int j=0; j<MAZE_SIZE; j++){
-            if(maze[i][j]=='0'){
-                printf("N");
-            }else if(maze[i][j]=='1'){
-                printf("W");
-            }else {
-                printf("%c",maze[i][j]);
-            }
+void print_maze() {
+    for (int i = 0; i < MAZE_SIZE; i++) {
+        for (int j = 0; j < MAZE_SIZE; j++) {
+            printf("%c", maze[i][j]);
         }
         printf("\n");
     }
 }
 
-bool movable(Position pos, int dir)
-{
-
+bool movable(Position pos, int dir) {
+    Position next = move_to(pos, dir);
+    if ((next.x < 0 || next.x > MAZE_SIZE) || (next.y < 0 || next.y > MAZE_SIZE)){
+        return false;
+    }
+    if (maze[next.x][next.y] != '1') {
+        return true;
+        if()
+    }
 }

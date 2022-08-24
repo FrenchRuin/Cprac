@@ -7,7 +7,7 @@
 #define INIT_CAPACITY 100
 
 struct stack_type{
-    Item *contents;
+    pos *contents;
     int top;
     int size;
 };
@@ -19,7 +19,7 @@ static void terminate(const char *message){
 
 void reallocate(Stack s);
 
-void push(Stack s,Item i)
+void push(Stack s, pos i)
 {
     if (is_full(s)) {
         reallocate(s);
@@ -32,7 +32,7 @@ bool is_full(Stack s)
     return s->top == INIT_CAPACITY-1;
 }
 
-Item pop(Stack s)
+pos pop(Stack s)
 {
     if (is_empty(s)) {
         terminate("Error in pop : stack is empty");
@@ -41,7 +41,7 @@ Item pop(Stack s)
     return s->contents[s->top + 1];
 }
 
-Item peek(Stack s)
+pos peek(Stack s)
 {
     if (is_empty(s)) {
         terminate("Error in peek : stack is empty");
@@ -55,7 +55,7 @@ Stack create()
     if (s == NULL) {
         terminate("Error in create : stack could not be created.");
     }
-    s->contents = (Item *) malloc(INIT_CAPACITY * sizeof(Item));
+    s->contents = (pos *) malloc(INIT_CAPACITY * sizeof(pos));
     if (s->contents == NULL) {
         free(s);
         terminate("Error in create : stack could not be created.");
@@ -83,7 +83,7 @@ bool is_empty(Stack s)
 
 void reallocate(Stack s)
 {
-    Item *tmp = (Item *) malloc(2 * s->size * sizeof(Item));
+    pos *tmp = (pos *) malloc(2 * s->size * sizeof(pos));
     if (tmp == NULL) {
         terminate("Error in create : Stack could not be created.");
     }

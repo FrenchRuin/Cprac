@@ -4,4 +4,5 @@ project(C C)
 set(CMAKE_C_STANDARD 99)
 #set(CMAKE_C_FLAGS "-fexec-charset=CP949")
 
+#add_executable(C maze/maze.c maze/pos.h maze/pos.c maze/mazeStack.h maze/mazeStack.c)
 add_executable(C mazePrac/mazePrac.c)
