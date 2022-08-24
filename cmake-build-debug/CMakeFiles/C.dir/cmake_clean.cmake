@@ -4,14 +4,8 @@ file(REMOVE_RECURSE
   "C.pdb"
   "CMakeFiles/C.dir/postfix/postfix.c.obj"
   "CMakeFiles/C.dir/postfix/postfix.c.obj.d"
-  "CMakeFiles/C.dir/stacks/paren_checker.c.obj"
-  "CMakeFiles/C.dir/stacks/paren_checker.c.obj.d"
-  "CMakeFiles/C.dir/stacks/stackADT.c.obj"
-  "CMakeFiles/C.dir/stacks/stackADT.c.obj.d"
-  "CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj"
-  "CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj.d"
-  "CMakeFiles/C.dir/stacks/stackArray.c.obj"
-  "CMakeFiles/C.dir/stacks/stackArray.c.obj.d"
+  "CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj"
+  "CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj.d"
   "libC.dll.a"
 )
 

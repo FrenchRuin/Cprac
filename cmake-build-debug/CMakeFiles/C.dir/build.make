@@ -68,66 +68,10 @@ include CMakeFiles/C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C.dir/flags.make
 
-CMakeFiles/C.dir/stacks/paren_checker.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/stacks/paren_checker.c.obj: ../stacks/paren_checker.c
-CMakeFiles/C.dir/stacks/paren_checker.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/stacks/paren_checker.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/stacks/paren_checker.c.obj -MF CMakeFiles\C.dir\stacks\paren_checker.c.obj.d -o CMakeFiles\C.dir\stacks\paren_checker.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\stacks\paren_checker.c
-
-CMakeFiles/C.dir/stacks/paren_checker.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/stacks/paren_checker.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\stacks\paren_checker.c > CMakeFiles\C.dir\stacks\paren_checker.c.i
-
-CMakeFiles/C.dir/stacks/paren_checker.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/stacks/paren_checker.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\stacks\paren_checker.c -o CMakeFiles\C.dir\stacks\paren_checker.c.s
-
-CMakeFiles/C.dir/stacks/stackArray.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/stacks/stackArray.c.obj: ../stacks/stackArray.c
-CMakeFiles/C.dir/stacks/stackArray.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C.dir/stacks/stackArray.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/stacks/stackArray.c.obj -MF CMakeFiles\C.dir\stacks\stackArray.c.obj.d -o CMakeFiles\C.dir\stacks\stackArray.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackArray.c
-
-CMakeFiles/C.dir/stacks/stackArray.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/stacks/stackArray.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackArray.c > CMakeFiles\C.dir\stacks\stackArray.c.i
-
-CMakeFiles/C.dir/stacks/stackArray.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/stacks/stackArray.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackArray.c -o CMakeFiles\C.dir\stacks\stackArray.c.s
-
-CMakeFiles/C.dir/stacks/stackADT.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/stacks/stackADT.c.obj: ../stacks/stackADT.c
-CMakeFiles/C.dir/stacks/stackADT.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/C.dir/stacks/stackADT.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/stacks/stackADT.c.obj -MF CMakeFiles\C.dir\stacks\stackADT.c.obj.d -o CMakeFiles\C.dir\stacks\stackADT.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackADT.c
-
-CMakeFiles/C.dir/stacks/stackADT.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/stacks/stackADT.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackADT.c > CMakeFiles\C.dir\stacks\stackADT.c.i
-
-CMakeFiles/C.dir/stacks/stackADT.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/stacks/stackADT.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackADT.c -o CMakeFiles\C.dir\stacks\stackADT.c.s
-
-CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj: ../stacks/stackADT_linkedList.c
-CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj -MF CMakeFiles\C.dir\stacks\stackADT_linkedList.c.obj.d -o CMakeFiles\C.dir\stacks\stackADT_linkedList.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackADT_linkedList.c
-
-CMakeFiles/C.dir/stacks/stackADT_linkedList.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/stacks/stackADT_linkedList.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackADT_linkedList.c > CMakeFiles\C.dir\stacks\stackADT_linkedList.c.i
-
-CMakeFiles/C.dir/stacks/stackADT_linkedList.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/stacks/stackADT_linkedList.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\stacks\stackADT_linkedList.c -o CMakeFiles\C.dir\stacks\stackADT_linkedList.c.s
-
 CMakeFiles/C.dir/postfix/postfix.c.obj: CMakeFiles/C.dir/flags.make
 CMakeFiles/C.dir/postfix/postfix.c.obj: ../postfix/postfix.c
 CMakeFiles/C.dir/postfix/postfix.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/C.dir/postfix/postfix.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/postfix/postfix.c.obj"
 	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/postfix/postfix.c.obj -MF CMakeFiles\C.dir\postfix\postfix.c.obj.d -o CMakeFiles\C.dir\postfix\postfix.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix.c
 
 CMakeFiles/C.dir/postfix/postfix.c.i: cmake_force
@@ -138,27 +82,35 @@ CMakeFiles/C.dir/postfix/postfix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/postfix/postfix.c.s"
 	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix.c -o CMakeFiles\C.dir\postfix\postfix.c.s
 
+CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj: ../postfix/postfix_non_bracket.c
+CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj"
+	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj -MF CMakeFiles\C.dir\postfix\postfix_non_bracket.c.obj.d -o CMakeFiles\C.dir\postfix\postfix_non_bracket.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_non_bracket.c
+
+CMakeFiles/C.dir/postfix/postfix_non_bracket.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/postfix/postfix_non_bracket.c.i"
+	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_non_bracket.c > CMakeFiles\C.dir\postfix\postfix_non_bracket.c.i
+
+CMakeFiles/C.dir/postfix/postfix_non_bracket.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/postfix/postfix_non_bracket.c.s"
+	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\postfix\postfix_non_bracket.c -o CMakeFiles\C.dir\postfix\postfix_non_bracket.c.s
+
 # Object files for target C
 C_OBJECTS = \
-"CMakeFiles/C.dir/stacks/paren_checker.c.obj" \
-"CMakeFiles/C.dir/stacks/stackArray.c.obj" \
-"CMakeFiles/C.dir/stacks/stackADT.c.obj" \
-"CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj" \
-"CMakeFiles/C.dir/postfix/postfix.c.obj"
+"CMakeFiles/C.dir/postfix/postfix.c.obj" \
+"CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj"
 
 # External object files for target C
 C_EXTERNAL_OBJECTS =
 
-C.exe: CMakeFiles/C.dir/stacks/paren_checker.c.obj
-C.exe: CMakeFiles/C.dir/stacks/stackArray.c.obj
-C.exe: CMakeFiles/C.dir/stacks/stackADT.c.obj
-C.exe: CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj
 C.exe: CMakeFiles/C.dir/postfix/postfix.c.obj
+C.exe: CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj
 C.exe: CMakeFiles/C.dir/build.make
 C.exe: CMakeFiles/C.dir/linklibs.rsp
 C.exe: CMakeFiles/C.dir/objects1.rsp
 C.exe: CMakeFiles/C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable C.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable C.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -152,101 +152,29 @@ postfix/postfix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.s
 .PHONY : postfix/postfix.c.s
 
-stacks/paren_checker.obj: stacks/paren_checker.c.obj
-.PHONY : stacks/paren_checker.obj
+postfix/postfix_non_bracket.obj: postfix/postfix_non_bracket.c.obj
+.PHONY : postfix/postfix_non_bracket.obj
 
 # target to build an object file
-stacks/paren_checker.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/paren_checker.c.obj
-.PHONY : stacks/paren_checker.c.obj
+postfix/postfix_non_bracket.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_non_bracket.c.obj
+.PHONY : postfix/postfix_non_bracket.c.obj
 
-stacks/paren_checker.i: stacks/paren_checker.c.i
-.PHONY : stacks/paren_checker.i
-
-# target to preprocess a source file
-stacks/paren_checker.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/paren_checker.c.i
-.PHONY : stacks/paren_checker.c.i
-
-stacks/paren_checker.s: stacks/paren_checker.c.s
-.PHONY : stacks/paren_checker.s
-
-# target to generate assembly for a file
-stacks/paren_checker.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/paren_checker.c.s
-.PHONY : stacks/paren_checker.c.s
-
-stacks/stackADT.obj: stacks/stackADT.c.obj
-.PHONY : stacks/stackADT.obj
-
-# target to build an object file
-stacks/stackADT.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT.c.obj
-.PHONY : stacks/stackADT.c.obj
-
-stacks/stackADT.i: stacks/stackADT.c.i
-.PHONY : stacks/stackADT.i
+postfix/postfix_non_bracket.i: postfix/postfix_non_bracket.c.i
+.PHONY : postfix/postfix_non_bracket.i
 
 # target to preprocess a source file
-stacks/stackADT.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT.c.i
-.PHONY : stacks/stackADT.c.i
+postfix/postfix_non_bracket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_non_bracket.c.i
+.PHONY : postfix/postfix_non_bracket.c.i
 
-stacks/stackADT.s: stacks/stackADT.c.s
-.PHONY : stacks/stackADT.s
-
-# target to generate assembly for a file
-stacks/stackADT.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT.c.s
-.PHONY : stacks/stackADT.c.s
-
-stacks/stackADT_linkedList.obj: stacks/stackADT_linkedList.c.obj
-.PHONY : stacks/stackADT_linkedList.obj
-
-# target to build an object file
-stacks/stackADT_linkedList.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT_linkedList.c.obj
-.PHONY : stacks/stackADT_linkedList.c.obj
-
-stacks/stackADT_linkedList.i: stacks/stackADT_linkedList.c.i
-.PHONY : stacks/stackADT_linkedList.i
-
-# target to preprocess a source file
-stacks/stackADT_linkedList.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT_linkedList.c.i
-.PHONY : stacks/stackADT_linkedList.c.i
-
-stacks/stackADT_linkedList.s: stacks/stackADT_linkedList.c.s
-.PHONY : stacks/stackADT_linkedList.s
+postfix/postfix_non_bracket.s: postfix/postfix_non_bracket.c.s
+.PHONY : postfix/postfix_non_bracket.s
 
 # target to generate assembly for a file
-stacks/stackADT_linkedList.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackADT_linkedList.c.s
-.PHONY : stacks/stackADT_linkedList.c.s
-
-stacks/stackArray.obj: stacks/stackArray.c.obj
-.PHONY : stacks/stackArray.obj
-
-# target to build an object file
-stacks/stackArray.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackArray.c.obj
-.PHONY : stacks/stackArray.c.obj
-
-stacks/stackArray.i: stacks/stackArray.c.i
-.PHONY : stacks/stackArray.i
-
-# target to preprocess a source file
-stacks/stackArray.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackArray.c.i
-.PHONY : stacks/stackArray.c.i
-
-stacks/stackArray.s: stacks/stackArray.c.s
-.PHONY : stacks/stackArray.s
-
-# target to generate assembly for a file
-stacks/stackArray.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/stacks/stackArray.c.s
-.PHONY : stacks/stackArray.c.s
+postfix/postfix_non_bracket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_non_bracket.c.s
+.PHONY : postfix/postfix_non_bracket.c.s
 
 # Help Target
 help:
@@ -260,18 +188,9 @@ help:
 	@echo ... postfix/postfix.obj
 	@echo ... postfix/postfix.i
 	@echo ... postfix/postfix.s
-	@echo ... stacks/paren_checker.obj
-	@echo ... stacks/paren_checker.i
-	@echo ... stacks/paren_checker.s
-	@echo ... stacks/stackADT.obj
-	@echo ... stacks/stackADT.i
-	@echo ... stacks/stackADT.s
-	@echo ... stacks/stackADT_linkedList.obj
-	@echo ... stacks/stackADT_linkedList.i
-	@echo ... stacks/stackADT_linkedList.s
-	@echo ... stacks/stackArray.obj
-	@echo ... stacks/stackArray.i
-	@echo ... stacks/stackArray.s
+	@echo ... postfix/postfix_non_bracket.obj
+	@echo ... postfix/postfix_non_bracket.i
+	@echo ... postfix/postfix_non_bracket.s
 .PHONY : help
 
 
