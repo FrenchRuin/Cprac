@@ -152,6 +152,30 @@ postfix/postfix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix.c.s
 .PHONY : postfix/postfix.c.s
 
+postfix/postfix_bracket.obj: postfix/postfix_bracket.c.obj
+.PHONY : postfix/postfix_bracket.obj
+
+# target to build an object file
+postfix/postfix_bracket.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_bracket.c.obj
+.PHONY : postfix/postfix_bracket.c.obj
+
+postfix/postfix_bracket.i: postfix/postfix_bracket.c.i
+.PHONY : postfix/postfix_bracket.i
+
+# target to preprocess a source file
+postfix/postfix_bracket.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_bracket.c.i
+.PHONY : postfix/postfix_bracket.c.i
+
+postfix/postfix_bracket.s: postfix/postfix_bracket.c.s
+.PHONY : postfix/postfix_bracket.s
+
+# target to generate assembly for a file
+postfix/postfix_bracket.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/postfix/postfix_bracket.c.s
+.PHONY : postfix/postfix_bracket.c.s
+
 postfix/postfix_non_bracket.obj: postfix/postfix_non_bracket.c.obj
 .PHONY : postfix/postfix_non_bracket.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... postfix/postfix.obj
 	@echo ... postfix/postfix.i
 	@echo ... postfix/postfix.s
+	@echo ... postfix/postfix_bracket.obj
+	@echo ... postfix/postfix_bracket.i
+	@echo ... postfix/postfix_bracket.s
 	@echo ... postfix/postfix_non_bracket.obj
 	@echo ... postfix/postfix_non_bracket.i
 	@echo ... postfix/postfix_non_bracket.s

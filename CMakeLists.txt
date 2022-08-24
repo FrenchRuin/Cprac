@@ -4,4 +4,4 @@ project(C C)
 set(CMAKE_C_STANDARD 99)
 
 #add_executable(C linkedLists/Polynomial.c)
-add_executable(C postfix/postfix.c postfix/postfix_non_bracket.c)
+add_executable(C postfix/postfix.c postfix/postfix_non_bracket.c postfix/postfix_bracket.c)

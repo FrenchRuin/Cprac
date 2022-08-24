@@ -79,6 +79,9 @@
 		<Unit filename="C:/Users/XENSF101/Desktop/C/Cprac/postfix/postfix.c">
 			<Option target="C"/>
 		</Unit>
+		<Unit filename="C:/Users/XENSF101/Desktop/C/Cprac/postfix/postfix_bracket.c">
+			<Option target="C"/>
+		</Unit>
 		<Unit filename="C:/Users/XENSF101/Desktop/C/Cprac/postfix/postfix_non_bracket.c">
 			<Option target="C"/>
 		</Unit>
