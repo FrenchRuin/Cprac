@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\XENSF101\Desktop\C\Cprac
+CMAKE_SOURCE_DIR = C:\Users\toxic\Desktop\code\Cprac
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,77 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
-mazePrac/mazePrac.obj: mazePrac/mazePrac.c.obj
-.PHONY : mazePrac/mazePrac.obj
+maze/maze.obj: maze/maze.c.obj
+.PHONY : maze/maze.obj
 
 # target to build an object file
-mazePrac/mazePrac.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/mazePrac/mazePrac.c.obj
-.PHONY : mazePrac/mazePrac.c.obj
+maze/maze.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/maze.c.obj
+.PHONY : maze/maze.c.obj
 
-mazePrac/mazePrac.i: mazePrac/mazePrac.c.i
-.PHONY : mazePrac/mazePrac.i
+maze/maze.i: maze/maze.c.i
+.PHONY : maze/maze.i
 
 # target to preprocess a source file
-mazePrac/mazePrac.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/mazePrac/mazePrac.c.i
-.PHONY : mazePrac/mazePrac.c.i
+maze/maze.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/maze.c.i
+.PHONY : maze/maze.c.i
 
-mazePrac/mazePrac.s: mazePrac/mazePrac.c.s
-.PHONY : mazePrac/mazePrac.s
+maze/maze.s: maze/maze.c.s
+.PHONY : maze/maze.s
 
 # target to generate assembly for a file
-mazePrac/mazePrac.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/mazePrac/mazePrac.c.s
-.PHONY : mazePrac/mazePrac.c.s
+maze/maze.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/maze.c.s
+.PHONY : maze/maze.c.s
+
+maze/mazeStack.obj: maze/mazeStack.c.obj
+.PHONY : maze/mazeStack.obj
+
+# target to build an object file
+maze/mazeStack.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/mazeStack.c.obj
+.PHONY : maze/mazeStack.c.obj
+
+maze/mazeStack.i: maze/mazeStack.c.i
+.PHONY : maze/mazeStack.i
+
+# target to preprocess a source file
+maze/mazeStack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/mazeStack.c.i
+.PHONY : maze/mazeStack.c.i
+
+maze/mazeStack.s: maze/mazeStack.c.s
+.PHONY : maze/mazeStack.s
+
+# target to generate assembly for a file
+maze/mazeStack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/mazeStack.c.s
+.PHONY : maze/mazeStack.c.s
+
+maze/pos.obj: maze/pos.c.obj
+.PHONY : maze/pos.obj
+
+# target to build an object file
+maze/pos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/pos.c.obj
+.PHONY : maze/pos.c.obj
+
+maze/pos.i: maze/pos.c.i
+.PHONY : maze/pos.i
+
+# target to preprocess a source file
+maze/pos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/pos.c.i
+.PHONY : maze/pos.c.i
+
+maze/pos.s: maze/pos.c.s
+.PHONY : maze/pos.s
+
+# target to generate assembly for a file
+maze/pos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/pos.c.s
+.PHONY : maze/pos.c.s
 
 # Help Target
 help:
@@ -161,9 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... mazePrac/mazePrac.obj
-	@echo ... mazePrac/mazePrac.i
-	@echo ... mazePrac/mazePrac.s
+	@echo ... maze/maze.obj
+	@echo ... maze/maze.i
+	@echo ... maze/maze.s
+	@echo ... maze/mazeStack.obj
+	@echo ... maze/mazeStack.i
+	@echo ... maze/mazeStack.s
+	@echo ... maze/pos.obj
+	@echo ... maze/pos.i
+	@echo ... maze/pos.s
 .PHONY : help
 
 

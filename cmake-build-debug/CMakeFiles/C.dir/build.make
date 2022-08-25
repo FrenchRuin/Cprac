@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\XENSF101\Desktop\C\Cprac
+CMAKE_SOURCE_DIR = C:\Users\toxic\Desktop\code\Cprac
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/C.dir/depend.make
@@ -68,33 +68,65 @@ include CMakeFiles/C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C.dir/flags.make
 
-CMakeFiles/C.dir/mazePrac/mazePrac.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/mazePrac/mazePrac.c.obj: ../mazePrac/mazePrac.c
-CMakeFiles/C.dir/mazePrac/mazePrac.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/mazePrac/mazePrac.c.obj"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/mazePrac/mazePrac.c.obj -MF CMakeFiles\C.dir\mazePrac\mazePrac.c.obj.d -o CMakeFiles\C.dir\mazePrac\mazePrac.c.obj -c C:\Users\XENSF101\Desktop\C\Cprac\mazePrac\mazePrac.c
+CMakeFiles/C.dir/maze/maze.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/maze/maze.c.obj: ../maze/maze.c
+CMakeFiles/C.dir/maze/maze.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/maze/maze.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/maze/maze.c.obj -MF CMakeFiles\C.dir\maze\maze.c.obj.d -o CMakeFiles\C.dir\maze\maze.c.obj -c C:\Users\toxic\Desktop\code\Cprac\maze\maze.c
 
-CMakeFiles/C.dir/mazePrac/mazePrac.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/mazePrac/mazePrac.c.i"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\XENSF101\Desktop\C\Cprac\mazePrac\mazePrac.c > CMakeFiles\C.dir\mazePrac\mazePrac.c.i
+CMakeFiles/C.dir/maze/maze.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/maze/maze.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\maze\maze.c > CMakeFiles\C.dir\maze\maze.c.i
 
-CMakeFiles/C.dir/mazePrac/mazePrac.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/mazePrac/mazePrac.c.s"
-	"D:\CLion 2022.2\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\XENSF101\Desktop\C\Cprac\mazePrac\mazePrac.c -o CMakeFiles\C.dir\mazePrac\mazePrac.c.s
+CMakeFiles/C.dir/maze/maze.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/maze/maze.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\maze\maze.c -o CMakeFiles\C.dir\maze\maze.c.s
+
+CMakeFiles/C.dir/maze/pos.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/maze/pos.c.obj: ../maze/pos.c
+CMakeFiles/C.dir/maze/pos.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C.dir/maze/pos.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/maze/pos.c.obj -MF CMakeFiles\C.dir\maze\pos.c.obj.d -o CMakeFiles\C.dir\maze\pos.c.obj -c C:\Users\toxic\Desktop\code\Cprac\maze\pos.c
+
+CMakeFiles/C.dir/maze/pos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/maze/pos.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\maze\pos.c > CMakeFiles\C.dir\maze\pos.c.i
+
+CMakeFiles/C.dir/maze/pos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/maze/pos.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\maze\pos.c -o CMakeFiles\C.dir\maze\pos.c.s
+
+CMakeFiles/C.dir/maze/mazeStack.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/maze/mazeStack.c.obj: ../maze/mazeStack.c
+CMakeFiles/C.dir/maze/mazeStack.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/C.dir/maze/mazeStack.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/maze/mazeStack.c.obj -MF CMakeFiles\C.dir\maze\mazeStack.c.obj.d -o CMakeFiles\C.dir\maze\mazeStack.c.obj -c C:\Users\toxic\Desktop\code\Cprac\maze\mazeStack.c
+
+CMakeFiles/C.dir/maze/mazeStack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/maze/mazeStack.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\maze\mazeStack.c > CMakeFiles\C.dir\maze\mazeStack.c.i
+
+CMakeFiles/C.dir/maze/mazeStack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/maze/mazeStack.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\maze\mazeStack.c -o CMakeFiles\C.dir\maze\mazeStack.c.s
 
 # Object files for target C
 C_OBJECTS = \
-"CMakeFiles/C.dir/mazePrac/mazePrac.c.obj"
+"CMakeFiles/C.dir/maze/maze.c.obj" \
+"CMakeFiles/C.dir/maze/pos.c.obj" \
+"CMakeFiles/C.dir/maze/mazeStack.c.obj"
 
 # External object files for target C
 C_EXTERNAL_OBJECTS =
 
-C.exe: CMakeFiles/C.dir/mazePrac/mazePrac.c.obj
+C.exe: CMakeFiles/C.dir/maze/maze.c.obj
+C.exe: CMakeFiles/C.dir/maze/pos.c.obj
+C.exe: CMakeFiles/C.dir/maze/mazeStack.c.obj
 C.exe: CMakeFiles/C.dir/build.make
 C.exe: CMakeFiles/C.dir/linklibs.rsp
 C.exe: CMakeFiles/C.dir/objects1.rsp
 C.exe: CMakeFiles/C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable C.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable C.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +138,6 @@ CMakeFiles/C.dir/clean:
 .PHONY : CMakeFiles/C.dir/clean
 
 CMakeFiles/C.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\XENSF101\Desktop\C\Cprac C:\Users\XENSF101\Desktop\C\Cprac C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug C:\Users\XENSF101\Desktop\C\Cprac\cmake-build-debug\CMakeFiles\C.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\toxic\Desktop\code\Cprac C:\Users\toxic\Desktop\code\Cprac C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles\C.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/C.dir/depend
 

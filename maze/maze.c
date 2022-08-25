@@ -20,30 +20,29 @@
 #include "pos.h"
 #include "mazeStack.h"
 
-
-#define MAZE_SIZE 10
+#define MAX 10
 #define PATH 0                  // 지나갈수있는 위치
 #define WALL 1                  // 지나갈수 없는 위치
 #define VISITED 2               // 이미 방문한 위치
 #define BACKTRACKED 3           // 방문했다가 되돌아온 위치
 
-char maze[MAZE_SIZE][MAZE_SIZE] = {
-        {'1', '1', '1', '1', '1', '1', '1', '1', '1', '1'},
-        {'m', '0', '0', '0', '1', '0', '0', '0', '0', '1'},
-        {'1', '0', '0', '0', '1', '0', '0', '1', '0', '1'},
-        {'1', '0', '1', '1', '1', '0', '0', '1', '0', '1'},
-        {'1', '0', '0', '0', '1', '0', '0', '1', '0', '1'},
-        {'1', '0', '1', '0', '1', '0', '0', '1', '0', '1'},
-        {'1', '0', '1', '0', '1', '0', '0', '1', '0', '1'},
-        {'1', '0', '1', '0', '1', '0', '0', '1', '0', '1'},
-        {'1', '0', '1', '0', '0', '0', '0', '1', '0', 'X'},
-        {'1', '1', '1', '1', '1', '1', '1', '1', '1', '1'}};
+int maze[MAX][MAX] = {{0, 0, 1, 1, 1, 1, 1, 1, 1, 1},  // FILE 대신 MAZE 정의
+                      {1, 0, 1, 1, 1, 1, 1, 0, 1, 1},
+                      {1, 0, 0, 1, 1, 1, 0, 0, 0, 1},
+                      {1, 0, 1, 0, 1, 1, 1, 1, 1, 1},
+                      {1, 0, 0, 0, 0, 0, 0, 0, 1, 1},
+                      {1, 1, 0, 1, 1, 1, 1, 0, 1, 1},
+                      {1, 1, 0, 0, 1, 1, 1, 0, 1, 1},
+                      {1, 1, 1, 0, 1, 1, 1, 1, 1, 1},
+                      {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                      {1, 1, 1, 1, 1, 1, 1, 1, 1, 0}};
 int n;
 
 
 void print_maze();
 
 bool movable(Position pos, int dir);
+
 
 int main() {
 
@@ -67,14 +66,14 @@ int main() {
                 forwarded = true;
                 break;
             }
-            if (!forwarded) {                       // 4방향중 어느곳으로도 가지 못했다면
-                maze[cur.x][cur.y] = BACKTRACKED;   // 왔다가 되돌아간 위치임을 표시
-                if (is_empty(s)) {                  // 되돌아갈 위치가 없다면 원래 길이없는 미로.
-                    printf("No path exists.\n");
-                    break;
-                }
-                cur = pop(s);           //  스택에서 pop한 위치가 새로운 현재위치가 된다.
+        }
+        if (!forwarded) {                       // 4방향중 어느곳으로도 가지 못했다면
+            maze[cur.x][cur.y] = BACKTRACKED;   // 왔다가 되돌아간 위치임을 표시
+            if (is_empty(s)) {                  // 되돌아갈 위치가 없다면 원래 길이없는 미로.
+                printf("No path exists.\n");
+                break;
             }
+            cur = pop(s);           //  스택에서 pop한 위치가 새로운 현재위치가 된다.
         }
     }
     print_maze();
@@ -82,21 +81,18 @@ int main() {
 
 
 void print_maze() {
-    for (int i = 0; i < MAZE_SIZE; i++) {
-        for (int j = 0; j < MAZE_SIZE; j++) {
-            printf("%c", maze[i][j]);
+    for (int i = 0; i < MAX; i++) {
+        for (int j = 0; j < MAX; j++) {
+            printf("%d", maze[i][j]);
         }
         printf("\n");
     }
+
 }
 
 bool movable(Position pos, int dir) {
-    Position next = move_to(pos, dir);
-    if ((next.x < 0 || next.x > MAZE_SIZE) || (next.y < 0 || next.y > MAZE_SIZE)){
-        return false;
-    }
-    if (maze[next.x][next.y] != '1') {
-        return true;
-        if()
-    }
+    pos = move_to(pos, dir);
+
+    return !(pos.x <0 || pos.y <0 || pos.x > MAX || pos.y > MAX);
+
 }
