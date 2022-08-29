@@ -128,77 +128,53 @@ C/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/build
 .PHONY : C/fast
 
-maze/maze.obj: maze/maze.c.obj
-.PHONY : maze/maze.obj
+queue/circularQueueADT.obj: queue/circularQueueADT.c.obj
+.PHONY : queue/circularQueueADT.obj
 
 # target to build an object file
-maze/maze.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/maze.c.obj
-.PHONY : maze/maze.c.obj
+queue/circularQueueADT.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/queue/circularQueueADT.c.obj
+.PHONY : queue/circularQueueADT.c.obj
 
-maze/maze.i: maze/maze.c.i
-.PHONY : maze/maze.i
+queue/circularQueueADT.i: queue/circularQueueADT.c.i
+.PHONY : queue/circularQueueADT.i
 
 # target to preprocess a source file
-maze/maze.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/maze.c.i
-.PHONY : maze/maze.c.i
+queue/circularQueueADT.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/queue/circularQueueADT.c.i
+.PHONY : queue/circularQueueADT.c.i
 
-maze/maze.s: maze/maze.c.s
-.PHONY : maze/maze.s
+queue/circularQueueADT.s: queue/circularQueueADT.c.s
+.PHONY : queue/circularQueueADT.s
 
 # target to generate assembly for a file
-maze/maze.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/maze.c.s
-.PHONY : maze/maze.c.s
+queue/circularQueueADT.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/queue/circularQueueADT.c.s
+.PHONY : queue/circularQueueADT.c.s
 
-maze/mazeStack.obj: maze/mazeStack.c.obj
-.PHONY : maze/mazeStack.obj
+queue/queueADT.obj: queue/queueADT.c.obj
+.PHONY : queue/queueADT.obj
 
 # target to build an object file
-maze/mazeStack.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/mazeStack.c.obj
-.PHONY : maze/mazeStack.c.obj
+queue/queueADT.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/queue/queueADT.c.obj
+.PHONY : queue/queueADT.c.obj
 
-maze/mazeStack.i: maze/mazeStack.c.i
-.PHONY : maze/mazeStack.i
-
-# target to preprocess a source file
-maze/mazeStack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/mazeStack.c.i
-.PHONY : maze/mazeStack.c.i
-
-maze/mazeStack.s: maze/mazeStack.c.s
-.PHONY : maze/mazeStack.s
-
-# target to generate assembly for a file
-maze/mazeStack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/mazeStack.c.s
-.PHONY : maze/mazeStack.c.s
-
-maze/pos.obj: maze/pos.c.obj
-.PHONY : maze/pos.obj
-
-# target to build an object file
-maze/pos.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/pos.c.obj
-.PHONY : maze/pos.c.obj
-
-maze/pos.i: maze/pos.c.i
-.PHONY : maze/pos.i
+queue/queueADT.i: queue/queueADT.c.i
+.PHONY : queue/queueADT.i
 
 # target to preprocess a source file
-maze/pos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/pos.c.i
-.PHONY : maze/pos.c.i
+queue/queueADT.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/queue/queueADT.c.i
+.PHONY : queue/queueADT.c.i
 
-maze/pos.s: maze/pos.c.s
-.PHONY : maze/pos.s
+queue/queueADT.s: queue/queueADT.c.s
+.PHONY : queue/queueADT.s
 
 # target to generate assembly for a file
-maze/pos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/maze/pos.c.s
-.PHONY : maze/pos.c.s
+queue/queueADT.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make CMakeFiles/C.dir/queue/queueADT.c.s
+.PHONY : queue/queueADT.c.s
 
 # Help Target
 help:
@@ -209,15 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... maze/maze.obj
-	@echo ... maze/maze.i
-	@echo ... maze/maze.s
-	@echo ... maze/mazeStack.obj
-	@echo ... maze/mazeStack.i
-	@echo ... maze/mazeStack.s
-	@echo ... maze/pos.obj
-	@echo ... maze/pos.i
-	@echo ... maze/pos.s
+	@echo ... queue/circularQueueADT.obj
+	@echo ... queue/circularQueueADT.i
+	@echo ... queue/circularQueueADT.s
+	@echo ... queue/queueADT.obj
+	@echo ... queue/queueADT.i
+	@echo ... queue/queueADT.s
 .PHONY : help
 
 

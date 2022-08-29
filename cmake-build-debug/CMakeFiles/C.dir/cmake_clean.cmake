@@ -2,12 +2,10 @@ file(REMOVE_RECURSE
   "C.exe"
   "C.exe.manifest"
   "C.pdb"
-  "CMakeFiles/C.dir/maze/maze.c.obj"
-  "CMakeFiles/C.dir/maze/maze.c.obj.d"
-  "CMakeFiles/C.dir/maze/mazeStack.c.obj"
-  "CMakeFiles/C.dir/maze/mazeStack.c.obj.d"
-  "CMakeFiles/C.dir/maze/pos.c.obj"
-  "CMakeFiles/C.dir/maze/pos.c.obj.d"
+  "CMakeFiles/C.dir/queue/circularQueueADT.c.obj"
+  "CMakeFiles/C.dir/queue/circularQueueADT.c.obj.d"
+  "CMakeFiles/C.dir/queue/queueADT.c.obj"
+  "CMakeFiles/C.dir/queue/queueADT.c.obj.d"
   "libC.dll.a"
 )
 

@@ -17,36 +17,59 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "pos.h"
-#include "mazeStack.h"
+#include <stdbool.h>
 
-#define MAX 10
+
+typedef struct position {
+    int x, y;
+} Position;
+
+typedef struct stack {
+    Position *pos;
+    int top;
+    int size;
+} Stack;
+
+#define MAZE_SIZE 10
 #define PATH 0                  // 지나갈수있는 위치
 #define WALL 1                  // 지나갈수 없는 위치
 #define VISITED 2               // 이미 방문한 위치
 #define BACKTRACKED 3           // 방문했다가 되돌아온 위치
 
-int maze[MAX][MAX] = {{0, 0, 1, 1, 1, 1, 1, 1, 1, 1},  // FILE 대신 MAZE 정의
-                      {1, 0, 1, 1, 1, 1, 1, 0, 1, 1},
-                      {1, 0, 0, 1, 1, 1, 0, 0, 0, 1},
-                      {1, 0, 1, 0, 1, 1, 1, 1, 1, 1},
-                      {1, 0, 0, 0, 0, 0, 0, 0, 1, 1},
-                      {1, 1, 0, 1, 1, 1, 1, 0, 1, 1},
-                      {1, 1, 0, 0, 1, 1, 1, 0, 1, 1},
-                      {1, 1, 1, 0, 1, 1, 1, 1, 1, 1},
-                      {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                      {1, 1, 1, 1, 1, 1, 1, 1, 1, 0}};
+int maze[MAZE_SIZE][MAZE_SIZE] =
+        {{0, 0, 1, 1, 1, 1, 1, 1, 1, 1},  // FILE 대신 MAZE 정의
+         {1, 0, 1, 1, 1, 1, 1, 0, 1, 1},
+         {1, 0, 0, 1, 1, 1, 0, 0, 0, 1},
+         {1, 0, 1, 0, 1, 1, 1, 1, 1, 1},
+         {1, 0, 0, 0, 0, 0, 0, 0, 1, 1},
+         {1, 1, 0, 1, 1, 1, 1, 0, 1, 1},
+         {1, 1, 0, 0, 1, 1, 1, 0, 1, 1},
+         {1, 1, 1, 0, 1, 1, 1, 1, 1, 1},
+         {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+         {1, 1, 1, 1, 1, 1, 1, 1, 1, 0}};
+
+int offset[4][2] = {{-1, 0},
+                    {0,  1},
+                    {1,  0},
+                    {0,  -1}};
+
 int n;
 
+Position move_to(Position pos, int dir);
+
+void push(Stack *s, Position cur);
+
+bool movable(Position cur, int dir);
+
+Stack *create();
 
 void print_maze();
 
-bool movable(Position pos, int dir);
-
-
+Position pop(Stack *s);
+bool is_empty(Stack *s);
 int main() {
 
-    Stack s = create();     // stack to save location
+    Stack *s = create();     // stack to save location
     Position cur;           // current location
     cur.x = 0;
     cur.y = 0;
@@ -57,8 +80,9 @@ int main() {
             printf("Found the Path.\n");
             break;
         }
+        bool forwarded = false;     // mark to success forward
 
-        bool forwarded = false;                     // mark to success forward
+
         for (int dir = 0; dir < 4; dir++) {         // 0:N , 1:E , 2:S , 3:W
             if (movable(cur, dir)) {          // dir 방향으로 이동할 수 있는지 검사
                 push(s, cur);                       // 현재위치를 stack 에 push
@@ -67,6 +91,7 @@ int main() {
                 break;
             }
         }
+
         if (!forwarded) {                       // 4방향중 어느곳으로도 가지 못했다면
             maze[cur.x][cur.y] = BACKTRACKED;   // 왔다가 되돌아간 위치임을 표시
             if (is_empty(s)) {                  // 되돌아갈 위치가 없다면 원래 길이없는 미로.
@@ -79,20 +104,56 @@ int main() {
     print_maze();
 }
 
+Position move_to(Position pos, int dir) {
+    Position next;
+    next.x = pos.x + offset[dir][0];
+    next.y = pos.y + offset[dir][1];
+    return next;
+}
+
+/**
+ * 1. 움직인쪽이 벽인경우
+ * 2. 미로밖을 나가는경우
+ * 3.
+ * */
+
+
+bool movable(Position cur, int dir) {
+
+
+
+    Position p = move_to(cur, dir);
+    return (p.x < 0 || p.y < 0 || p.x >MAZE_SIZE||p.y>MAZE_SIZE || maze[p.x][p.y] == WALL);
+}
+
+void push(Stack *s, Position cur) {
+    s->top++;
+    s->pos[s->top] = cur;
+}
+
+Stack *create() {
+    Stack *s = (Stack *) malloc(sizeof(Stack));
+    s->top = -1;
+
+    return s;
+}
 
 void print_maze() {
-    for (int i = 0; i < MAX; i++) {
-        for (int j = 0; j < MAX; j++) {
+    for (int i = 0; i < MAZE_SIZE; i++) {
+        for (int j = 0; j < MAZE_SIZE; j++) {
             printf("%d", maze[i][j]);
         }
         printf("\n");
     }
-
 }
 
-bool movable(Position pos, int dir) {
-    pos = move_to(pos, dir);
+Position pop(Stack *s) {
+    s->top--;
+    return s->pos[s->top + 1];
+}
 
-    return !(pos.x <0 || pos.y <0 || pos.x > MAX || pos.y > MAX);
+bool is_empty(Stack *s)
+{
+        return s->top == -1;
 
 }

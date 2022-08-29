@@ -68,65 +68,49 @@ include CMakeFiles/C.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C.dir/flags.make
 
-CMakeFiles/C.dir/maze/maze.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/maze/maze.c.obj: ../maze/maze.c
-CMakeFiles/C.dir/maze/maze.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/maze/maze.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/maze/maze.c.obj -MF CMakeFiles\C.dir\maze\maze.c.obj.d -o CMakeFiles\C.dir\maze\maze.c.obj -c C:\Users\toxic\Desktop\code\Cprac\maze\maze.c
+CMakeFiles/C.dir/queue/queueADT.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/queue/queueADT.c.obj: ../queue/queueADT.c
+CMakeFiles/C.dir/queue/queueADT.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/C.dir/queue/queueADT.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/queue/queueADT.c.obj -MF CMakeFiles\C.dir\queue\queueADT.c.obj.d -o CMakeFiles\C.dir\queue\queueADT.c.obj -c C:\Users\toxic\Desktop\code\Cprac\queue\queueADT.c
 
-CMakeFiles/C.dir/maze/maze.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/maze/maze.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\maze\maze.c > CMakeFiles\C.dir\maze\maze.c.i
+CMakeFiles/C.dir/queue/queueADT.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/queue/queueADT.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\queue\queueADT.c > CMakeFiles\C.dir\queue\queueADT.c.i
 
-CMakeFiles/C.dir/maze/maze.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/maze/maze.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\maze\maze.c -o CMakeFiles\C.dir\maze\maze.c.s
+CMakeFiles/C.dir/queue/queueADT.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/queue/queueADT.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\queue\queueADT.c -o CMakeFiles\C.dir\queue\queueADT.c.s
 
-CMakeFiles/C.dir/maze/pos.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/maze/pos.c.obj: ../maze/pos.c
-CMakeFiles/C.dir/maze/pos.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C.dir/maze/pos.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/maze/pos.c.obj -MF CMakeFiles\C.dir\maze\pos.c.obj.d -o CMakeFiles\C.dir\maze\pos.c.obj -c C:\Users\toxic\Desktop\code\Cprac\maze\pos.c
+CMakeFiles/C.dir/queue/circularQueueADT.c.obj: CMakeFiles/C.dir/flags.make
+CMakeFiles/C.dir/queue/circularQueueADT.c.obj: ../queue/circularQueueADT.c
+CMakeFiles/C.dir/queue/circularQueueADT.c.obj: CMakeFiles/C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/C.dir/queue/circularQueueADT.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/queue/circularQueueADT.c.obj -MF CMakeFiles\C.dir\queue\circularQueueADT.c.obj.d -o CMakeFiles\C.dir\queue\circularQueueADT.c.obj -c C:\Users\toxic\Desktop\code\Cprac\queue\circularQueueADT.c
 
-CMakeFiles/C.dir/maze/pos.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/maze/pos.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\maze\pos.c > CMakeFiles\C.dir\maze\pos.c.i
+CMakeFiles/C.dir/queue/circularQueueADT.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/queue/circularQueueADT.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\queue\circularQueueADT.c > CMakeFiles\C.dir\queue\circularQueueADT.c.i
 
-CMakeFiles/C.dir/maze/pos.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/maze/pos.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\maze\pos.c -o CMakeFiles\C.dir\maze\pos.c.s
-
-CMakeFiles/C.dir/maze/mazeStack.c.obj: CMakeFiles/C.dir/flags.make
-CMakeFiles/C.dir/maze/mazeStack.c.obj: ../maze/mazeStack.c
-CMakeFiles/C.dir/maze/mazeStack.c.obj: CMakeFiles/C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/C.dir/maze/mazeStack.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/C.dir/maze/mazeStack.c.obj -MF CMakeFiles\C.dir\maze\mazeStack.c.obj.d -o CMakeFiles\C.dir\maze\mazeStack.c.obj -c C:\Users\toxic\Desktop\code\Cprac\maze\mazeStack.c
-
-CMakeFiles/C.dir/maze/mazeStack.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C.dir/maze/mazeStack.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\toxic\Desktop\code\Cprac\maze\mazeStack.c > CMakeFiles\C.dir\maze\mazeStack.c.i
-
-CMakeFiles/C.dir/maze/mazeStack.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/maze/mazeStack.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\maze\mazeStack.c -o CMakeFiles\C.dir\maze\mazeStack.c.s
+CMakeFiles/C.dir/queue/circularQueueADT.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C.dir/queue/circularQueueADT.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\toxic\Desktop\code\Cprac\queue\circularQueueADT.c -o CMakeFiles\C.dir\queue\circularQueueADT.c.s
 
 # Object files for target C
 C_OBJECTS = \
-"CMakeFiles/C.dir/maze/maze.c.obj" \
-"CMakeFiles/C.dir/maze/pos.c.obj" \
-"CMakeFiles/C.dir/maze/mazeStack.c.obj"
+"CMakeFiles/C.dir/queue/queueADT.c.obj" \
+"CMakeFiles/C.dir/queue/circularQueueADT.c.obj"
 
 # External object files for target C
 C_EXTERNAL_OBJECTS =
 
-C.exe: CMakeFiles/C.dir/maze/maze.c.obj
-C.exe: CMakeFiles/C.dir/maze/pos.c.obj
-C.exe: CMakeFiles/C.dir/maze/mazeStack.c.obj
+C.exe: CMakeFiles/C.dir/queue/queueADT.c.obj
+C.exe: CMakeFiles/C.dir/queue/circularQueueADT.c.obj
 C.exe: CMakeFiles/C.dir/build.make
 C.exe: CMakeFiles/C.dir/linklibs.rsp
 C.exe: CMakeFiles/C.dir/objects1.rsp
 C.exe: CMakeFiles/C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable C.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\toxic\Desktop\code\Cprac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable C.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\C.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

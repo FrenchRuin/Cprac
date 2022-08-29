@@ -56,10 +56,10 @@ Stack create()
         terminate("Error in create : stack could not be created.");
     }
     s->contents = (pos *) malloc(INIT_CAPACITY * sizeof(pos));
-    if (s->contents == NULL) {
-        free(s);
-        terminate("Error in create : stack could not be created.");
-    }
+//    if (s->contents == NULL) {
+//        free(s);
+//        terminate("Error in create : stack could not be created.");
+//    }
     s->top = -1;
     s->size = INIT_CAPACITY;
     return s;

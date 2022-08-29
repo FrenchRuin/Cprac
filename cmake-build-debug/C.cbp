@@ -76,19 +76,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/maze/maze.c">
+		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/queue/circularQueueADT.c">
 			<Option target="C"/>
 		</Unit>
-		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/maze/mazeStack.c">
+		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/queue/queueADT.c">
 			<Option target="C"/>
 		</Unit>
-		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/maze/mazeStack.h">
-			<Option target="C"/>
-		</Unit>
-		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/maze/pos.c">
-			<Option target="C"/>
-		</Unit>
-		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/maze/pos.h">
+		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/queue/queueADT.h">
 			<Option target="C"/>
 		</Unit>
 		<Unit filename="C:/Users/toxic/Desktop/code/Cprac/CMakeLists.txt">

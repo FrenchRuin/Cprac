@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/toxic/Desktop/code/Cprac/maze/maze.c" "CMakeFiles/C.dir/maze/maze.c.obj" "gcc" "CMakeFiles/C.dir/maze/maze.c.obj.d"
-  "C:/Users/toxic/Desktop/code/Cprac/maze/mazeStack.c" "CMakeFiles/C.dir/maze/mazeStack.c.obj" "gcc" "CMakeFiles/C.dir/maze/mazeStack.c.obj.d"
-  "C:/Users/toxic/Desktop/code/Cprac/maze/pos.c" "CMakeFiles/C.dir/maze/pos.c.obj" "gcc" "CMakeFiles/C.dir/maze/pos.c.obj.d"
+  "C:/Users/toxic/Desktop/code/Cprac/queue/circularQueueADT.c" "CMakeFiles/C.dir/queue/circularQueueADT.c.obj" "gcc" "CMakeFiles/C.dir/queue/circularQueueADT.c.obj.d"
+  "C:/Users/toxic/Desktop/code/Cprac/queue/queueADT.c" "CMakeFiles/C.dir/queue/queueADT.c.obj" "gcc" "CMakeFiles/C.dir/queue/queueADT.c.obj.d"
   )
 
 # Targets to which this target links.
